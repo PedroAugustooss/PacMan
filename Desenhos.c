@@ -1,7 +1,11 @@
 #pragma once
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "Assinaturas.h"
+
+extern Mapa map;
+extern Posicao hero;
 
 void Desenha_Bomba(){
 
@@ -23,6 +27,10 @@ void Desenha_Bomba(){
 }
 
 void Desenha_Simbolo(int op){
+
+    system("cls");
+
+    Imprime_Mapa(&map);
 
     if(op == 0){
 
